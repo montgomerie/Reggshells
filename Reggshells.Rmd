@@ -1,0 +1,59 @@
+---
+title: "Statistical Supplement"
+output: 
+  pdf_document: 
+    highlight: zenburn
+    number_sections: yes
+    toc: yes
+editor_options: 
+  chunk_output_type: inline
+---
+
+Stats for paper on AMRO eggshell thickness with Amelia and Philina
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = TRUE)
+```
+
+# R details and packages used
+  * File creation date: `r Sys.Date()`
+  * `r R.version.string`
+  * `lme4` package version: `r packageVersion("lme4")`
+  * `MuMIn` package version: `r packageVersion("MuMIn")`
+  * 'lmerTest' package version: `r packageVersion("lmerTest")` #this package gives some test stats when running lmer models
+  * 'tidyverse' package version: `r packageVersion("tidyverse")`
+  * 'arm' package version: `r packageVersion("arm")`
+  * 'emmeans' package version: `r packageVersion("emmeans")`
+  * 'sjPlot' package version: `r packageVersion("sjPlot")`
+  * 'sjstats' package version: `r packageVersion("sjstats")`
+  * 'car' package version: `r packageVersion("car")`
+  * 'psych' package version: `r packageVersion("psych")`
+  * 'rsq' package version: `r packageVersion("rsq")`
+  * 'ridge' package version: `r packageVersion("ridge")`
+  * 'AICcmodavg' package version: `r packageVersion("AICcmodavg")`
+  * 'summarytools' package version: `r packageVersion("summarytools")`
+
+        
+# Load packages
+```{r}
+library(lme4) #genlin mixed models
+library(MuMIn) #model evaluation and selection
+library(lmerTest) #adss tests and P to lmer
+library(tidyverse) #ggplot2, dpolyr and the rest, all at once
+library(arm) #Gelman's functions
+library(emmeans) #used to be lsmeans
+library(sjPlot) #diagnostic and other data viz plots;  gives a warning that you can ignore as we do not use the TMB package
+library(sjstats) #lots of convenient functions
+library(car) #lots of corrs and regression stats
+library(psych) #effect size sytays, corr matrices
+library(rsq) #various functions to calc R^2
+library(ridge) #ridge regressions
+library(AICcmodavg) #some useful model averaging functions
+library(summarytools) #some basic functions for summarizing data
+```
+
+# 
+```{r}
+(z=2+2*8)
+```
+
